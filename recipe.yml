@@ -1,0 +1,12 @@
+name: 'Formulae: Content types'
+description: 'Provides a set of standard content types types and related configuration.'
+type: 'Site'
+install:
+  - layout_paragraphs
+  - metatag
+  - paragraphs
+  - pathauto
+config:
+  import:
+    metatag: "*"
+    pathauto: "*"
