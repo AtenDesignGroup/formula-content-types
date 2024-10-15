@@ -9,19 +9,36 @@ dependencies:
     - field.field.node.news.field_summary_text
     - node.type.news
   module:
+    - datetime
+    - nomarkup
+    - text
     - user
 id: node.news.teaser
 targetEntityType: node
 bundle: news
 mode: teaser
 content:
-  links:
+  field_published_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings:
+      nomarkup:
+        enabled: false
+        separator: '|'
+        referenced_entity: ''
+    weight: 0
+    region: content
+  field_summary_text:
+    type: text_default
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
   field_news_category: true
   field_p_content: true
-  field_published_date: true
-  field_summary_text: true
+  links: true
