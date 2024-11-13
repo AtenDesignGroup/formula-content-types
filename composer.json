@@ -1,5 +1,5 @@
 {
-    "name": "aten/formulae-content-types",
+    "name": "aten/formula-content-types",
     "description": "Recipe for foundational content types.",
     "type": "drupal-recipe",
     "license": "GPL-2.0-or-later",
